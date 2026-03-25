@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2604110121 이현준 공유</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero share-hero" id="share-home">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">2604110121 LEE HYEONJUN</a>
+        <div class="menu">
+          <a href="index.html">&#54856;</a>
+          <a href="#share-form">&#44277;&#50976;&#54616;&#44592;</a>
+          <a href="#public-feed">&#44277;&#44060; &#54588;&#46300;</a>
+          <a href="#private-feed">&#48708;&#44277;&#44060; &#44592;&#47197;</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">SHARE PAGE</p>
+        <h1>&#51088;&#44592;&#49548;&#44060;&#49436;&#47484;<br>&#44277;&#50976;&#54616;&#45716; &#44275;</h1>
+        <p class="hero-text">
+          &#52395; &#54168;&#51060;&#51648;&#50640;&#49436; &#51200;&#51109;&#54620; &#51088;&#44592;&#49548;&#44060;&#49436;&#47484; &#44277;&#50976;&#54616;&#44256;, &#44277;&#44060; &#50724;&#49496;&#44284; &#48708;&#44277;&#44060; &#50724;&#49496;&#51012; &#49440;&#53469;&#54624; &#49688; &#51080;&#49845;&#45768;&#45796;.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#share-form">&#44277;&#50976; &#51089;&#49457;&#54616;&#44592;</a>
+          <a class="button secondary" href="index.html">&#52395; &#54168;&#51060;&#51648;&#47196; &#46028;&#50500;&#44032;&#44592;</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="share-form">
+        <div class="section-heading">
+          <p class="section-label">SHARE WRITER</p>
+          <h2>&#44277;&#50976;&#54616;&#44592;</h2>
+        </div>
+
+        <div class="editor-grid">
+          <article class="editor-card">
+            <form id="share-profile-form" class="profile-form">
+              <label class="field">
+                <span>&#51200;&#51109;&#46108; &#49548;&#44060;&#49436;</span>
+                <select id="saved-profile-select" class="select-input"></select>
+              </label>
+
+              <label class="field">
+                <span>&#44277;&#50976; &#51060;&#47492; *</span>
+                <input id="share-author" type="text" required placeholder="&#44277;&#50976;&#50640; &#54364;&#49884;&#54624; &#51060;&#47492;">
+              </label>
+
+              <label class="field">
+                <span>&#44277;&#50976; &#47700;&#47784;</span>
+                <textarea id="share-message" rows="4" placeholder="&#44036;&#45800;&#54620; &#44172;&#49884;&#47932; &#47700;&#49464;&#51648;&#47484; &#45224;&#44592;&#49464;&#50836;"></textarea>
+              </label>
+
+              <div class="visibility-picker">
+                <span class="field-title">&#44277;&#44060; &#49444;&#51221;</span>
+                <label class="toggle-option">
+                  <input type="radio" name="visibility" value="public" checked>
+                  <span>&#44277;&#44060;</span>
+                </label>
+                <label class="toggle-option">
+                  <input type="radio" name="visibility" value="private">
+                  <span>&#48708;&#44277;&#44060;</span>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button class="button primary" type="submit">&#44277;&#50976;&#54616;&#44592;</button>
+                <button id="refresh-saved" class="button secondary" type="button">&#51200;&#51109; &#49548;&#44060;&#49436; &#49352;&#47196;&#44256;&#52840;</button>
+              </div>
+
+              <p id="share-message-text" class="form-message" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="editor-card help-card">
+            <h3>&#44277;&#50976; &#44032;&#51060;&#46300;</h3>
+            <p>&#52395; &#54168;&#51060;&#51648;&#50640;&#49436; &#51200;&#51109;&#54620; &#51088;&#44592;&#49548;&#44060;&#49436;&#47484; &#49440;&#53469;&#54620; &#46368; &#44277;&#50976;&#54624; &#49688; &#51080;&#49845;&#45768;&#45796;.</p>
+            <p>&#44277;&#44060;&#47196; &#50732;&#47532;&#47732; &#47784;&#46160;&#44032; &#48380; &#49688; &#51080;&#44256;, &#48708;&#44277;&#44060;&#47196; &#50732;&#47532;&#47732; &#45208;&#47564; &#48372;&#45716; &#44592;&#47197;&#50640; &#51200;&#51109;&#46121;&#45768;&#45796;.</p>
+            <p>&#44057;&#51008; &#48652;&#46972;&#50864;&#51200;&#50640;&#49436;&#45716; &#45796;&#47480; &#49324;&#46988; &#49548;&#44060;&#49436;&#46020; &#44277;&#50976; &#47785;&#47197;&#50640; &#54632;&#44760; &#44592;&#47197;&#54624; &#49688; &#51080;&#49845;&#45768;&#45796;.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="public-feed">
+        <div class="section-heading">
+          <p class="section-label">PUBLIC FEED</p>
+          <h2>&#44277;&#44060; &#44277;&#50976;</h2>
+        </div>
+        <div id="public-share-list" class="share-grid"></div>
+      </section>
+
+      <section class="section" id="private-feed">
+        <div class="section-heading">
+          <p class="section-label">PRIVATE RECORDS</p>
+          <h2>&#48708;&#44277;&#44060; &#44277;&#50976;</h2>
+        </div>
+        <div id="private-share-list" class="share-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="share.js"></script>
+</body>
+</html>

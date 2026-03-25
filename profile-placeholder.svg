@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">프로필 사진 자리표시자</title>
+  <desc id="desc">사용자 사진을 넣을 수 있는 프로필 이미지 자리입니다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#153243"/>
+      <stop offset="100%" stop-color="#d96b2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="330" r="135" fill="rgba(255,255,255,0.88)"/>
+  <path d="M190 835c34-145 131-220 210-220s176 75 210 220" fill="rgba(255,255,255,0.88)"/>
+  <text x="400" y="925" text-anchor="middle" font-family="Segoe UI, Malgun Gothic, sans-serif" font-size="42" fill="#fff">
+    PHOTO
+  </text>
+</svg>
